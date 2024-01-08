@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="83px" height="83px" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 83000 83000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#F17400;stroke-width:2126;stroke-linecap:round;stroke-linejoin:round}
+    .fil2 {fill:none}
+    .fil1 {fill:#FFE3C9}
+    .fil0 {fill:white}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_546809880">
+   <g>
+    <polygon class="fil0 str0" points="49220,34996 17407,53364 33779,62816 65593,44449 "/>
+    <polygon class="fil1 str0" points="65593,59261 33779,77629 33779,62816 65593,44449 "/>
+    <polygon class="fil0 str0" points="17407,68176 33779,77629 33779,62816 17407,53364 "/>
+    <line class="fil2 str0" x1="29373" y1="52389" x2="36200" y2= "56331" />
+    <g>
+     <path class="fil2 str0" d="M35304 48824c2276,1314 4551,2628 6827,3942"/>
+     <path class="fil2 str0" d="M41235 45259c2276,1314 4551,2627 6827,3941"/>
+    </g>
+    <line class="fil2 str0" x1="47166" y1="41693" x2="53993" y2= "45635" />
+   </g>
+   <polygon class="fil0 str0" points="65127,11000 33313,29368 49686,38820 81500,20453 "/>
+   <polygon class="fil1 str0" points="81500,35265 49686,53633 49686,38820 81500,20453 "/>
+   <polygon class="fil0 str0" points="33314,44180 49686,53633 49686,38820 33313,29368 "/>
+   <line class="fil2 str0" x1="45280" y1="28393" x2="52107" y2= "32335" />
+   <polygon class="fil0 str0" points="33313,29367 1500,47735 17872,57188 49686,38820 "/>
+   <polygon class="fil1 str0" points="49686,53633 17872,72000 17872,57188 49686,38820 "/>
+   <polygon class="fil0 str0" points="1500,62548 17872,72000 17872,57188 1500,47735 "/>
+   <line class="fil2 str0" x1="31259" y1="36065" x2="38086" y2= "40006" />
+   <polygon class="fil0 str0" points="49220,5371 17406,23739 33779,33192 65593,14824 "/>
+   <polygon class="fil1 str0" points="65593,29637 33779,48004 33779,33192 65593,14824 "/>
+   <polygon class="fil0 str0" points="17407,38552 33779,48004 33779,33192 17406,23739 "/>
+  </g>
+ </g>
+</svg>

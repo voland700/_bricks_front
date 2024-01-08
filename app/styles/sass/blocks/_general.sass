@@ -1,0 +1,208 @@
+@keyframes appear
+	from
+		opacity: 0
+	to
+		opacity: 1
+
+@keyframes fadeInDown
+	from
+		opacity: 0
+		transform: translate3d(0, -100%, 0)
+	to
+		opacity: 1
+		transform: translate3d(0, 0, 0)
+		top: 0
+
+@keyframes fadeIn
+	from
+		opacity: 0
+		height: 0
+	to
+		opacity: 1
+		height: 100%
+
+@keyframes occurrence
+	from
+		opacity: 0
+	to
+		opacity: 1
+@keyframes shining
+	from
+		left: -45%
+		opacity: .0
+	90%
+		left: 80%
+		opacity: .6
+	95%
+		left: 90%
+		opacity: .3
+	to
+		left: 100%
+		opacity: 0
+
+.shining
+	position: relative
+	overflow: hidden
+	transition: .2s
+	&::after
+		content: ''
+		position: absolute
+		top: 0
+		left: -50%
+		z-index: 2
+		display: block
+		width: 25%
+		height: 100%
+		opacity: 0
+		overflow: hidden
+		background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.3) 100%)
+		transform: skewX(-25deg)
+	&:focus,
+	&:hover
+		&::after
+			animation-duration: .4s
+			animation-fill-mode: both
+			animation-name: shining
+
+@keyframes shine
+	from
+		left: -45%
+		opacity: 1
+	to
+		left: 100%
+		opacity: 1
+
+.shine
+	position: relative
+	overflow: hidden
+	transition: .2s
+	&::before
+		position: absolute
+		top: 0
+		left: -45%
+		z-index: 2
+		display: block
+		content: ''
+		width: 25%
+		height: 100%
+		opacity: 0
+		background: linear-gradient(to right,rgba(255,255,255,0) 0,rgba(255,255,255,.2) 100%)
+		transform: skewX(-25deg)
+		transition: .2s
+
+	&:focus,
+	&:hover
+		&::before
+			animation-duration: .4s
+			animation-fill-mode: both
+			animation-name: shine
+
+.exude
+	color: $accent
+.exude-bold
+	color: $accent
+	font-weight: 700
+
+
+.grid
+	display: grid
+	grid-template-columns: calc( 100% - 320px ) 290px
+	grid-template-rows: auto auto
+	gap: 0 30px
+.grid_category
+	grid-column: 1 / 2
+	grid-row: 1 /2
+
+	//min-height: 70px
+	//border: 1px solid $grey
+.grid_content
+	grid-column: 1 / 2
+	grid-row: 2 / 3
+
+.grid_sidebar
+	grid-column: 2 / 3
+	grid-row: 1 / 3
+
+ 
+
+.mr_0
+	margin-right: 0 !important
+.mr_05
+	margin-right: .5rem
+.mr_1
+	margin-right: 1rem
+.mr_15
+	margin-right: 1.5rem
+.mr_2
+	margin-right: 2rem
+.mr_25
+	margin-right: 2.5rem
+.mr_3
+	margin-right: 3rem
+
+.ml_0
+	margin-left: 0 !important
+.ml_05
+	margin-left: .5rem
+.ml_1
+	margin-left: 1rem
+.ml_15
+	margin-left: 1.5rem
+.ml_2
+	margin-left: 2rem
+.ml_25
+	margin-left: 2.5rem
+.ml_3
+	margin-left: 3rem
+
+.mt_0
+	margin-top: 0 !important
+.mt_05
+	margin-top: .5rem
+.mt_1
+	margin-top: 1rem
+.mt_15
+	margin-top: 1.5rem
+.mt_2
+	margin-top: 2rem
+.mt_25
+	margin-top: 2.5rem
+.mt_3
+	margin-top: 3rem
+
+.mb_0
+	margin-bottom: 0 !important
+.mb_05
+	margin-bottom: .5rem
+.mb_1
+	margin-bottom: 1rem
+.mb_15
+	margin-bottom: 1.5rem
+.mb_2
+	margin-bottom: 2rem
+.mb_25
+	margin-bottom: 2.5rem
+.mb_3
+	margin-bottom: 3rem
+
+
+@media (max-width: 1400px)
+	.grid
+		grid-template-columns: calc( 100% - 300px ) 270px
+
+@media (max-width: 992px)
+	.grid
+		grid-template-columns: 100%
+		grid-template-rows: auto auto auto
+		gap: 30px 0
+	.grid_category
+		grid-column: 1 / 2
+		grid-row: 1 / 2
+
+	.grid_content
+		grid-column: 1 / 2
+		grid-row: 3 / 4
+
+	.grid_sidebar
+		grid-column: 1 / 2
+		grid-row: 2 / 3

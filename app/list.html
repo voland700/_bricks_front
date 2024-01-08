@@ -1,0 +1,564 @@
+<!--#set var="title" value="OptimizedHTML 5" -->
+<!--#include virtual="/parts/header.html" -->
+<div class="container">
+	<h1 class="title">Материалы для печей и каминов</h1>
+	<nav aria-label="breadcrumb">
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Главная</a></li>
+			<li class="breadcrumb-item"><a href="#">Каталог</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Материалы для печей и каминов</li>
+		</ul>
+	</nav>
+
+
+	<aside class="grid">
+
+		<div class="grid_category">
+			<ul class="category_list">
+
+				<li class="category_item">
+					<a href="#" class="category_link">
+						<div class="category_img_wrap">
+							<img src="/images/src/categories/bricks.jpg" alt="images" class="category_img">
+						</div>
+						<h2 class="category_title">Печной кирпич</h2>
+					</a>
+				</li>
+
+				<li class="category_item">
+					<a href="#" class="category_link">
+						<div class="category_img_wrap">
+							<img src="/images/src/categories/mix.jpg" alt="images" class="category_img">
+						</div>
+						<h2 class="category_title">Глины и смеси</h2>
+					</a>
+				</li>
+
+				<li class="category_item">
+					<a href="#" class="category_link">
+						<div class="category_img_wrap">
+							<img src="/images/src/categories/iron.jpg" alt="images" class="category_img">
+						</div>
+						<h2 class="category_title">Чугунное печное литьё</h2>
+					</a>
+				</li>
+
+				<li class="category_item">
+					<a href="#" class="category_link">
+						<div class="category_img_wrap">
+							<img src="/images/src/categories/isolate.jpg" alt="images" class="category_img">
+						</div>
+						<h2 class="category_title">Изоляция</h2>
+					</a>
+				</li>
+
+				<li class="category_item">
+					<a href="#" class="category_link">
+						<div class="category_img_wrap">
+							<img src="/images/src/categories/chemny.jpg" alt="images" class="category_img">
+						</div>
+						<h2 class="category_title">Дымоходы и вентканалы</h2>
+					</a>
+				</li>
+
+				<li class="category_item">
+					<a href="#" class="category_link">
+						<div class="category_img_wrap">
+							<img src="/images/src/categories/fake_bricks.jpg" alt="images" class="category_img">
+						</div>
+						<h2 class="category_title">Плитка под кирпич</h2>
+					</a>
+				</li>
+
+				<li class="category_item">
+					<a href="#" class="category_link">
+						<div class="category_img_wrap">
+							<img src="/images/src/categories/materials.jpg" alt="images" class="category_img">
+						</div>
+						<h2 class="category_title">Материалы для монтажа</h2>
+					</a>
+				</li>
+
+				<li class="category_item">
+					<a href="#" class="category_link">
+						<div class="category_img_wrap">
+							<img src="/images/src/categories/tensels.jpg" alt="images" class="category_img">
+						</div>
+						<h2 class="category_title">Посуда и кухонная утварь</h2>
+					</a>
+				</li>
+
+
+
+			</ul>
+
+
+
+
+			 
+		</div>
+
+		<div class="grid_content">
+			<div class="sort_block">
+				<div class="sort_btns">
+					<button type="button" class="sort_btn active" data-type="grid" onclick="showCatalog(this)">
+						<svg id="grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" class="sort_svg">
+							<path d="M9.86,0V9.86H0V0H9.86Z"/>
+							<path d="M23,9.86H13.14V0h9.86V9.86Z"/>
+							<path d="M0,13.14H9.86v9.86H0V13.14Z"/>
+							<path d="M13.14,23V13.14h9.86v9.86H13.14Z"/>
+						</svg>
+					</button>
+					<button type="button" class="sort_btn" data-type="line" onclick="showCatalog(this)">
+						<svg id="line" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23 23" class="sort_svg">
+							<rect y="17.52" width="5.48" height="5.48"/>
+							<rect x="7.67" y="17.52" width="15.33" height="5.48"/>
+							<rect y="8.76" width="5.48" height="5.48"/>
+							<rect x="7.67" y="8.76" width="15.33" height="5.48"/>
+							<rect width="5.48" height="5.48"/>
+							<rect x="7.67" width="15.33" height="5.48"/>
+						</svg>						
+					</button>
+				</div>
+
+				<div class="sort_action">
+					<div class="sort_elem mr_1">
+						<label class="sort_label" for="input-limit">Показывать:</label>
+						<select id="input-limit" class="sort_select">
+							<option value="#">24</option>
+							<option value="36" selected="selected">36</option>
+							<option value="48">48</option>
+							<option value="60">60</option>
+							<option value="72">72</option>
+						</select>
+					</div>
+				
+
+					<div class="sort_elem">
+						<label class="sort_label mob_hidden" for="input-sort">Сортировать:</label>
+						<select id="input-sort" class="sort_select">
+							<option value="1" selected="selected">По умолчанию</option>
+							<option value="name_ask">По Имени (A - Я)</option>
+							<option value="name_desk">По Имени (Я - A)</option>
+							<option value="price_up">По Цене (возрастанию)</option>
+							<option value="price_down">По Цене (убыванию)</option>
+							<option value="mod_ask">По Модели (A - Я)</option>
+							<option value="mod_down">По Модели (Я - A)</option>
+						</select>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="items_wrap _list" id="itemsBlock">
+				<div class="items_list main">
+					<div class="item">
+						<div class="item_inner">
+							<span class="item_labels_list">
+								<span class="item_label hit">Хит</span>
+							</span>
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link shine">
+									<img src="/images/src/list/polnotelyi-kirpich-lode-vecais-janka-300x300.jpg" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">12.102100L Кирпич полнотелый Lode Vecais Janka, 250x120x65 красный ретро</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">97.00 </span>								
+								</div>
+								<form action="https://vezuviy-legenda.ru/add-to-cart" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item_inner">
+
+							<span class="item_disount">-10%</span>
+							
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/001-300x300.png" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">Тандем (Донские Зори) Тиволи LN006 490x90x40 мм</a></h3>
+							
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">264.19 </span>
+									<span class="item_price-old">297.00 руб</span>
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item_inner">
+							<span class="item_labels_list">
+								<span class="item_label new">Новинка</span>							
+								<span class="item_label hit">Хит</span>
+							</span>
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/IMG_20201208_13590022222-removebg-preview-300x300.png" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">Кирпич огнеупорный прямой Ш-6 Черный «ГОСТ 390-2018, ГОСТ 8691-2018»</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">221.00 </span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item_inner">
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/06-6-300x300.jpg" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">Кирпич огнеупорный прямой ША-6 «ГОСТ 390-2018, ГОСТ 8691-2018»</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">84.00</span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- / ROW 2 -->
+					<div class="item">
+						<div class="item_inner">
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/osnovit_1.png" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">Белая термостойкая штукатурка ОСНОВИТ ПЕЧФОРМ PC400 W</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">761.00</span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item_inner">
+							<span class="item_labels_list">
+								<span class="item_label hit">Хит</span>
+							</span>
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/kremin-300x300.jpg" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">Смесь универсальная Мастер Гарц Кремин UC-15 Основит</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">190.00</span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item_inner">
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/mert2-300x300.jpg" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">Мертель огнеупорный Терракот</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">650.00</span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item_inner">
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/glina-300x300.jpg" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">Глина каолиновая 20 кг Терракот</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">500.00</span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<!-- ROW 3 -->
+
+					<div class="item">
+						<div class="item_inner">
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/kirpich-kc-keramik-krasnui-300x300.jpg" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">КС-керамик красный гладкий полнотелый печной кирпич</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">90.00</span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item_inner">
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/kirpich-kc-keramik-kamelot-temnui-shokolad-300x300.jpg" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">КС-керамик камелот темный шоколад полнотелый печной кирпич</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">173.00</span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="item_inner">
+							<span class="item_labels_list">
+								<span class="item_label sale">Акция</span>
+							</span>		
+							<div class="item_img_wrap">												
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/kirpich-kc-keramik-arenberg1-300x300.jpg" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">КС-керамик Аренберг полнотелый печной кирпич</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">97.00</span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="item">
+						<div class="item_inner">
+							<div class="item_img_wrap">
+								<a href="#" class="item_img_link">
+									<img src="/images/src/list/kirpich-kc-keramik-lotos-pechnoi-300x300.jpg" alt="Товар" class="item_img">
+								</a>
+							</div>
+							<h3 class="item_title"><a href="#" class="item_title_link">КС-керамик лотос гладкий полнотелый печной кирпич</a></h3>
+							<div class="item_price_block">
+								<div class="item_price_value">
+									<span class="item_price rub">147.00</span>							
+								</div>
+								<form action="#" method="GET" class="item_form">
+									<div class="item_counter_wrap">
+											<span class="item_counter__btn" data-direction="minus">-</span>
+											<input type="number" name="quantity" value="1" size="5" class="item_counter__value">
+											<span class="item_counter__btn" data-direction="plus">+</span>
+									</div>
+									<input type="hidden" name="product_id" value="371">
+									<button name="button" type="submit" class="item_btn">В корзину</button>
+								</form>
+							</div>
+						</div>
+					</div>				
+				
+				</div><!-- / .items_list -->
+			
+				<nav class="pagination_wrap" aria-label="Page navigation example">
+					<ul class="pagination_list">
+						<!--
+							<li class="pagination_direct dormant"><a class="pagination_direct_link prev"><span class="icon-chevron-left"></span></a></li>
+						-->
+						
+						<li class="pagination_direct"><span class="pagination_direct_link"><span class="icon-chevron-left"></span></span></li>
+						<li class="pagination_item"><span class="pagination_link active">1</span></li>
+						<li class="pagination_item"><a class="pagination_link" href="#">2</a></li>
+						<li class="pagination_item"><a class="pagination_link" href="#">3</a></li>
+						<li class="pagination_item"><a class="pagination_link" href="#">4</a></li>
+						<li class="pagination_item"><a class="pagination_link" href="#">5</a></li>
+						<li class="pagination_item"><span class="pagination_link dormant">...</span></li>
+						<li class="pagination_item"><a class="pagination_link" href="#">7</a></li>
+						<li class="pagination_item"><a class="pagination_link" href="#">8</a></li>
+						<li class="pagination_item"><a class="pagination_link" href="#">9</a></li>
+						<li class="pagination_direct"><a class="pagination_direct_link" href="#"><span class="icon-chevron-right "></span></a></li>
+					</ul>
+				</nav>
+
+
+				<div class="list_preloader" id="Preloader">
+					<div class="spinner">
+						<div class="rect1"></div>
+						<div class="rect2"></div>
+						<div class="rect3"></div>
+						<div class="rect4"></div>
+						<div class="rect5"></div>
+					</div>
+				</div>
+
+
+
+			</div>
+			<div class="article">
+				<p>Наша компания предлагает купить в Москве печной кирпич с гарантией качества. В ассортименте представлены высокопрочные материалы от ведущих зарубежных и отечественных заводов. Цена на печной кирпич зависит от состава и характеристик материала и финансовой политики компании-производителя. Возможно бесплатное временное хранение заказанной Вами продукции на нашем складе.</p>
+				<h2>Особенности материалов</h2>
+				<p>Печным называется полнотелый кирпич, способный выдерживать повышенные (до 1000 °С) температуры. Он изготавливается из легко- и среднеплавкой глины, в которую добавляется песок (примерно 50 % от общей массы). Физико-химические параметры печного кирпича обеспечивают хорошую аккумуляцию и равномерное распределение тепла. Стандартные габариты изделия составляют 250 х 120 х 65 мм, что позволяет оптимизировать процесс укладки. Для обустройства промышленных печей применяются известково-магнезиальные материалы. Кроме хорошей аккумуляции тепла, они отличаются и рекордной прочностью. Печной кирпич делится на следующие разновидности:</p>
+				<ul>
+					<li>глиноземистый,</li>
+					<li>углеродистый,</li>
+					<li>кварцевый,</li>
+					<li>шамотовый,</li>
+					<li>основной.</li>
+				</ul>
+				<h3>Где купить качественный печной кирпич</h3>
+				<p>От качества стройматериала зависит прочность всей конструкции. Печной кирпич, представленный в нашем каталоге, проходит тщательную проверку и соответствует действующим отраслевым стандартам. Тестирование проводится по следующим критериям:</p>
+				<ul>
+					<li>отсутствие каких-либо сколов и трещин на поверхности материалов;</li>
+					<li>раскалывание на куски, а не рассыпание при сильных механических воздействиях;</li>
+					<li>насыщенный коричневый оттенок, свидетельствующий о проведении надлежащей термической обработки изделий.</li>
+				</ul>
+				<p>Чтобы купить печной кирпич, обращайтесь к нам по телефону: +7 (916) 881-83-99  или оформляйте заказ на стройматериалы в онлайн-режиме. Также Вы можете посетить наш офис, расположенный в Москве на 38-м километре МКАД.</p>
+				<h2>Что такое печной кирпич?</h2>
+				<p><strong>Печной кирпич</strong> &ndash; это полнотелый кирпич, который способен выдержать температуру до 1000 градусов по Цельсию. Изготавливается он из среднеплавкой и легкоплавкой глины с добавлением песка (50% от всей массы). За счет своих физико-химических свойств, такой кирпич отлично аккумулирует и равномерно излучает тепло, поэтому основным его направлением является &ndash; устройство каминов и печей. </p>
+				<h2>Виды печных кирпичей</h2>
+				<p><strong>Купить печной кирпич</strong> на сегодня довольно просто, достаточно обратиться в специализированное место продажи. Стандартный размер изделия равен - 250*120*65, что создает оптимальные условия для кладки и теплоотдачи. Также <strong>печной кирпич недорого</strong> можно приобрести следующих видов:</p>
+				<ol>
+					<li><em>Углеродистый</em></li>
+					<li><em>Глиноземистый</em></li>
+					<li><em>Кварцевый</em></li>
+					<li><em>Основной</em></li>
+					<li><em>Шамотовый</em></li>
+				</ol>
+				<p>Для промышленных нужд, <strong>купить печной кирпич</strong> можно из известково-магнезиального сырья, который обладает необычайной прочностью и хорошо аккумулирует тепло.</p>
+				<h3>Где приобрести качественный кирпич?</h3>
+				<p>Найти <strong>печной кирпич, цена</strong> которого будет соответствовать оптимальному сочетанию цены и качества, можно в нашем печном центре, который предоставляет продукцию с учетом всех современных особенностей использования. <br />
+					Вся наша продукция проходит тщательную проверку по следующим параметрам:</p>
+				<ol>
+					<li><em>При попытке расколоть изделие должно расколоться на куски, а не рассыпаться.</em></li>
+					<li><em>Учитывая, что более светлый кирпич это признак - недожженности, все изделия, предлагаемые нашей фирмой, имеют насыщенный коричневый оттенок.</em></li>
+					<li><em>На поверхности кирпича  отсутствуют даже мельчайшие трещины и сколы.</em></li>
+				</ol>
+				<p>Таким образом, если вы все еще думаете, где приобрести <strong>печной кирпич, цена</strong> на который вам по карману, то обратитесь к нам и мы предоставим вам идеальный вариант, который не оставит вас равнодушными. </p>
+			</div>
+		</div>
+
+		<aside class="grid_sidebar">
+			<!--#include virtual="/parts/sidebar.html" -->
+		</aside>
+		
+	</div>	
+
+
+</div>
+<!--#include virtual="/parts/footer.html" -->

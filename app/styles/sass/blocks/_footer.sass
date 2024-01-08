@@ -1,0 +1,127 @@
+.footer_wrap
+	padding-top: 3rem
+	background-color: $sd-opposit
+	margin-top: 3rem
+	border-top: 1px solid $d-opposit
+.footer_inner
+	display: flex
+	flex-wrap: wrap
+
+.footer_block
+	width: 25%
+	padding: 0 15px 15px 15px
+
+.footer_h3
+	color: #fff
+	font-weight: 700
+	font-size: 1.05rem
+	letter-spacing: 2px
+	text-transform: uppercase
+	margin-bottom: .75rem
+	text-shadow: 0 1px 2px rgba(0,0,0,.2)
+
+.footer_list
+	list-style: none
+	padding-left: 0
+.footer_item
+	font-size: 1rem
+	line-height: 1.35
+	color: darken(#fff, 10%)
+	margin-bottom: 5px
+.footer_item_link
+	color: darken(#fff, 10%)
+	text-decoration: none
+	transition: color 0.25s ease 0s
+	&:hover
+		color: $accent
+
+.footer_black
+	display: inline-block
+	margin-right: .5rem
+	color: $sl-opposit
+
+.footer_bottom
+	border-top: 1px solid $d-opposit
+	padding: 1rem 0
+
+.fotter_copyrate
+	color: #fff
+	opacity: .3
+
+.footr_icons_list
+	display: flex
+	flex-wrap: wrap
+	list-style: none
+	margin: auto 0
+	padding: 0
+.footer_icon_li
+	display: block
+	height: 30px
+	width: 30px	
+	margin: 0 5px 5px 0	
+	box-sizing: border-box
+	border: 1px solid transparent
+	cursor: pointer
+.footer_icon img
+	transition: opacity 0.25s ease 0s
+	&:hover
+		opacity: .8
+
+.footer_btn_up
+	position: fixed
+	background-color: darken($sd-opposit, 3%)
+	right: 15px
+	bottom: 25px
+	cursor: pointer
+	display: none
+	align-items: center
+	justify-content: center
+	width: 45px
+	height: 45px
+	overflow: hidden 
+	border-radius: 12px
+	transition: opacity .25s ease 0s
+	&::before
+		content: ""
+		display: block
+		width: 25px
+		height: 25px
+		background-size: 100% 100%		
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E")
+
+
+
+@keyframes show_up
+	0%
+		opacity: 0
+	to
+		opacity: .8
+
+.footer_btn_up.show	
+	animation: show_up 2.5s forwards
+	display: flex
+	transition: opacify .27s ease-out
+
+.footer_btn_up.show:hover
+	opacity: .8
+
+@media (max-width: 992px)	
+	.footer_block
+		width: 33.33%
+	.footer_block.info
+		width: 100%
+		padding: 2rem 0
+		border-top: 1px solid $d-opposit
+
+@media (max-width: 576px)
+	.footer_block
+		width: 100%
+		text-align: center
+		margin-bottom: 1rem
+	.footr_icons_list
+		justify-content: center
+
+
+
+
+

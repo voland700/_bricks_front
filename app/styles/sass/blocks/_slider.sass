@@ -1,0 +1,156 @@
+.slider_box
+	background-color: rgba($sl-opposit, .25)
+	padding-top: 40px
+	padding-bottom: 50px
+.slider
+	width: 100%
+	height: auto
+.slider_wrapper
+	height: 400px
+	position: relative
+	border-radius: 5px
+	overflow: hidden
+	
+.slider_item
+	position: relative
+	display: flex
+	height: 100%
+	padding: 0 40px
+	user-select: none
+
+.slider_info
+	display: flex
+	flex-direction: column
+	width: 40%
+	margin-left: 10%
+	padding-top: 30px
+	padding-right: 1rem	
+	z-index: 5
+
+.slider_title
+	font-size: 1.9rem
+	font-weight: 700
+	color: $accent
+	text-shadow: 1px 1px 0 rgba(0,0,0,.2)
+	margin-bottom: 1rem
+.slider_link
+	color:$accent
+	text-decoration: none
+	transition: color 0.15s ease 0s
+	&:hover
+		color: darken($accent, 5% )
+.slider_text
+	font-size: 1rem
+	color: $sd-opposit
+	min-height: 145px
+.slider_list
+	margin-bottom: 0
+	padding-left: 1.5rem
+.slider_list_item
+	padding-left: 7px
+	font-size: 1rem
+	//line-height: 1.45
+	color: $sd-opposit
+	&::marker
+		content: '⁃'
+		font-size: 1.2em
+		font-weight: 700
+		//color: $accent
+		margin-right: 5px
+
+.slider_btn
+	display: inline-block
+	align-self: flex-start
+	text-decoration: none
+	padding: 6px 13px 7px 13px
+	background-color: $opposit
+	border: 2px solid $opposit
+	border-radius: 3px
+
+	border-radius: 5px
+	color: #fff
+	//margin-left: 25px
+	margin-top: 25px
+	text-shadow: 1px 1px 1px rgba(43,56,62,.1)
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+	transition: border-color 70ms ease-out, background-color 70ms ease-out, box-shadow 70ms ease-out
+	&:hover,
+	&:focus
+		text-decoration: none
+		color: #ffffff
+		background-color: $orange
+		border-color: $orange
+		box-shadow: 0 1px 1px rgba(0,0,0,0.2)
+
+.slider_img_wrap
+	//width: 40%
+	display: flex
+	align-items: flex-end
+
+.slider_img
+	max-width: 100%
+	max-height: 100%
+	object-fit: contain
+	//object-fit: scale-down
+	object-position: center bottom
+
+.slider_wrapper.swiper-wrapper
+	height: 400px
+.slider_item.swiper-slide
+	display: flex
+
+.swiper-button-next,
+.swiper-button-prev
+	transition: opacity 0.25s ease 0s
+	&::after
+		color: #fff
+		opacity: 0
+
+.slider
+	&:hover
+		.swiper-button-next,
+		.swiper-button-prev
+			&::after
+				opacity: .4
+	.swiper-button-next,
+	.swiper-button-prev		
+		&:hover
+			&::after
+				opacity: 1
+
+@media (max-width: 1400px)
+	.slider_item
+		padding: 0
+
+@media (max-width: 1200px)
+	.slider_wrapper.swiper-wrapper
+		height:  auto
+	.slider_info
+		width: 50%
+		margin-left: 5%
+	.slider_img_wrap
+		width: 50%
+		align-items: center
+	.slider_title
+		font-size: 1.7rem
+
+@media (max-width: 992px)
+	.slider_info
+		width: 50%
+		margin-left: 0
+	.slider_title
+		font-size: 1.6rem	
+	.slider_btn	
+		font-size: .96rem
+		padding: 6px 13px 7px
+
+@media (max-width: 768px)
+	.slider_info
+		width: 100%
+		padding: 0
+	.slider_img_wrap
+		display: none	
+
+	
+
+		

@@ -1,0 +1,80 @@
+.sale_block
+	margin-bottom: 2.5rem
+.sale_title
+	font-size: 1rem
+	font-weight: 700
+.sale_list
+	display: block
+	margin: 0
+	padding: 0
+	list-style: none
+	padding-left: 10px
+	
+.sale_item
+	width: 100%
+	display: flex
+	justify-content: space-between
+	padding: .5rem 0
+
+	
+
+.sale_img_wrap
+	display: block
+	width: 20%
+	margin-right: 5%
+	position: relative
+	&::before
+		content: ''
+		display: block
+		padding-top: 100%
+.sale_img_link
+	display: flex
+	align-items: flex-start
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+.sale_img
+	display: block	
+	max-width: 100%
+	max-height: 100%
+
+.sale_info_wrap
+	width: 75%
+.sale_name_link
+	display: block
+	font-size: .9rem
+	line-height: 1.25
+	color: $textcolor
+	text-decoration: none
+	font-style: italic
+	margin-bottom: .5rem
+	transition: background-color .25s ease 0s,
+	&:hover
+		color: $accent
+.sale_price
+	font-size: .9rem
+	line-height: 1
+.sale_real_price
+	display: inline-block	
+	font-weight: 700
+	margin-right: .5rem
+	&::after
+		content: "₽"
+		display: inline-block
+		margin-left: 2px
+.sale_old_price
+	display: inline-block	
+	font-style: italic
+	text-decoration: line-through
+	color: lighten($textcolor, 15%)
+	&::after
+		content: "₽"
+		display: inline-block
+		margin-left: 2px
+		text-decoration: line-through
+
+@media (max-width: 992px)
+	.sale_block
+		display: none

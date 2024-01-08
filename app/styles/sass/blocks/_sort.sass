@@ -1,0 +1,62 @@
+.sort_block
+	display: flex
+	justify-content: space-between
+	justify-items: center
+	padding: 10px 15px
+	border: 1px solid $sl-grey
+	box-sizing: border-box
+	border-radius: 3px
+	margin-bottom: 2rem
+	color: #666
+
+.sort_btns
+	display: flex
+.sort_btn
+	display: block
+	width: 21px
+	height: 21px
+	background-color: transparent
+	border: 0
+	margin-right: .75rem
+	padding: 0
+
+.sort_svg
+	display: block
+	width: 100%
+	height: 100%
+	path,
+	rect
+		transition: fill .25s ease 0s, opacity .25s ease 0s, 
+		fill: lighten($textcolor, 10%)
+		opacity: .6
+.sort_btn.active		
+	.sort_svg
+		path,
+		rect
+			opacity: 1
+
+.sort_btn
+	&:hover	
+		.sort_svg
+			path,
+			rect
+				opacity: 1
+				fill: $sd-opposit	
+
+
+.sort_action
+	display: flex
+	font-size: .8rem
+
+	
+.sort_elem
+.sort_label
+.sort_select
+	box-sizing: border-box
+	border: 1px solid $l-grey
+	border-radius: 2px
+	padding: 2px
+	&:focus 
+		outline: 1px solid $sd-opposit
+	&:focus-visible
+		outline: 1px solid $sd-opposit	 

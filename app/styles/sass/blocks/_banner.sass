@@ -1,0 +1,31 @@
+.banners_block
+	box-sizing: border-box
+	border: 1px solid $sl-grey
+	border-radius: 4px
+	margin-bottom: 2.5rem
+.banners_list
+	margin: 0
+	padding: 0
+	list-style: none
+.banner_item
+	display: block
+	position: relative
+	width: 100%
+	&::before
+		content: ''
+		display: block
+		padding-top: 100%
+.banner_link
+	position: absolute
+	top: 0
+	right: 0	
+	bottom: 0
+	left: 0
+.banner_img
+	width: 100%
+
+@media (max-width: 992px)
+	.banners_block
+		display: none
+	.banners_block.swiper
+		display: none	

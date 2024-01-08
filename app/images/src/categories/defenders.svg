@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Creator: CorelDRAW X8 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="83px" height="83px" version="1.0" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 83000 83000"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#F17400;stroke-width:2126;stroke-linecap:round;stroke-linejoin:round}
+    .fil2 {fill:none}
+    .fil1 {fill:#FFE3C9}
+    .fil0 {fill:white}
+   ]]>
+  </style>
+    <clipPath id="id0">
+     <path d="M72070 14163c-11466,0 -22462,-4555 -30570,-12663 -8108,8108 -19104,12663 -30570,12663 0,34459 13278,54712 30570,67337 17292,-12625 30570,-32878 30570,-67337z"/>
+    </clipPath>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_546810072">
+   <path class="fil0" d="M72070 14163c-11466,0 -22462,-4555 -30570,-12663 -8108,8108 -19104,12663 -30570,12663 0,34459 13278,54712 30570,67337 17292,-12625 30570,-32878 30570,-67337z"/>
+   <g style="clip-path:url(#id0)">
+    <g>
+     <rect class="fil1" x="41500" y="-717" width="41588" height="84434"/>
+    </g>
+   </g>
+   <path class="fil2 str0" d="M72070 14163c-11466,0 -22462,-4555 -30570,-12663 -8108,8108 -19104,12663 -30570,12663 0,34459 13278,54712 30570,67337 17292,-12625 30570,-32878 30570,-67337z"/>
+   <path class="fil0" d="M48285 37193c0,0 -912,4092 -8189,5907 -3014,752 -4849,3804 -4097,6818 751,3015 3804,4849 6819,4098 9096,-2268 5467,-16823 5467,-16823z"/>
+   <path class="fil1 str0" d="M45250 19184c-8524,4912 -7500,18750 -7500,18750 0,0 -3750,-1250 -3750,-6875 -4474,2594 -7500,7581 -7500,13125 0,8285 6716,15000 15000,15000 8284,0 15000,-6715 15000,-15000 0,-12187 -11250,-14687 -11250,-25000l0 0zm-2432 34832c-3015,751 -6067,-1083 -6819,-4097 -752,-3015 1083,-6068 4097,-6819 7277,-1815 8189,-5907 8189,-5907 0,0 3629,14555 -5467,16823l0 0z"/>
+  </g>
+ </g>
+</svg>

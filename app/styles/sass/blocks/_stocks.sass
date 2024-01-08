@@ -1,0 +1,77 @@
+.stocks_list_block
+.stocks_top_text
+	font-size: .95rem
+	line-height: 1.6
+	margin-bottom: 2rem
+.stocks_list
+	margin-bottom: 2.5rem	
+
+.stocks_item
+	padding: 15px 0
+	border-bottom: 1px solid $sl-grey
+	&:first-child
+		border-top: 1px solid $sl-grey	
+		
+.stocks_item_inner
+	display: flex
+	flex-wrap: wrap
+
+.stocks_img_wrap
+	width: 270px
+	margin-right: 24px
+	border: 1ppx solid $borderLightGray
+	box-sizing: border-box
+	border-radius: 2px
+	padding: 2px
+	overflow: hidden
+.stocks_a_img
+	display: block
+	height: auto
+.stocks_img
+	width: 100%
+.stocks_contеnt
+	width: calc( 100% - 294px )
+	display: flex
+	flex-direction: column
+.stocks_title
+	font-size: 1rem
+	line-height: 1.3
+	font-weight: 700
+
+.stocks_title_link
+	color: $textcolor
+	color: $sd-opposit
+	text-decoration: none
+	transition: color 0.25s ease 0s
+	margin-bottom: .75rem
+	&:hover
+		color: $accent
+.stocks_sammary
+	font-size: .95rem
+	line-height: 1.6
+.stocks_link_to
+	color: $textcolor
+	text-decoration: none	
+	transition: color 0.25s ease 0s
+	margin-top: auto
+	&:hover
+		color: $accent
+
+
+
+
+
+@media (max-width: 768px)
+	.stocks_item
+		padding: 1.5rem 0 1rem 0
+	.stocks_img_wrap
+		width: 300px
+		margin: 0 auto 1rem auto
+	.stocks_contеnt
+		width: 100%
+	.stocks_sammary
+		margin-bottom: 1rem	
+
+@media (max-width: 400px)
+	.stocks_img_wrap
+		width: 100%

@@ -1,0 +1,144 @@
+// USER VARIABLES SECTION
+
+$accent: #F17400 // Accent Color
+$l-accent: #F8973E
+$sl-accent:#F8B170
+$d-accent: #B56E2D
+$sd-accent: #9D4B00
+
+$opposit: #038294
+$l-opposit: #35B7C9
+$sl-opposit:#5DBCC9
+$past-sl-opposit: #5F9EA6
+$ssl-opposit: rgba($sl-opposit, .1)
+$d-opposit: #1D656F
+$sd-opposit: #015460
+$past-sd-opposit: #266871	
+
+$blue: #1236A3
+$green: #00B820
+$grey: #777
+$l-grey: lighten($grey, 30%)
+$sl-grey: lighten($grey, 45%)
+$bgGray: #e5e5e9
+$borderGray: #d0d0d0
+$borderLightGray: #ced4da
+
+$fontsize: 16px // Body Font Size
+$textcolor: #333 // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: roboto-oh5, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Bootstrap compatible gutter variable => $gutter
+$grid-gutter-width: 30px
+$gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+@import 'node_modules/bootstrap/scss/_utilities.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
+@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
+@include font('roboto-oh5', normal, 500, '../fonts/Roboto-Medium.woff2')
+@include font('roboto-oh5', italic, 500, '../fonts/Roboto-MediumItalic.woff2')
+@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
+@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+
+// GENERAL CSS SETTINGS
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $l-opposit
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+
+
+.mr_0
+	margin-right: 0 !important
+.mr_05
+	margin-right: .5rem
+.mr_1
+	margin-right: 1rem
+.mr_15
+	margin-right: 1.5rem
+.mr_2
+	margin-right: 2rem
+.mr_25
+	margin-right: 2.5rem
+.mr_3
+	margin-right: 3rem
+
+.ml_0
+	margin-left: 0 !important
+.ml_05
+	margin-left: .5rem
+.ml_1
+	margin-left: 1rem
+.ml_15
+	margin-left: 1.5rem
+.ml_2
+	margin-left: 2rem
+.ml_25
+	margin-left: 2.5rem
+.ml_3
+	margin-left: 3rem
+
+.mt_0
+	margin-top: 0 !important
+.mt_05
+	margin-top: .5rem
+.mt_1
+	margin-top: 1rem
+.mt_15
+	margin-top: 1.5rem
+.mt_2
+	margin-top: 2rem
+.mt_25
+	margin-top: 2.5rem
+.mt_3
+	margin-top: 3rem
+
+.mb_0
+	margin-bottom: 0 !important
+.mb_05
+	margin-bottom: .5rem
+.mb_1
+	margin-bottom: 1rem
+.mb_15
+	margin-bottom: 1.5rem
+.mb_2
+	margin-bottom: 2rem
+.mb_25
+	margin-bottom: 2.5rem
+.mb_3
+	margin-bottom: 3rem

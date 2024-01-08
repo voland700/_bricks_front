@@ -1,0 +1,130 @@
+.masters_block
+.masters_top_text
+	margin-bottom: 2.5rem
+.masters_top_text_info
+	font-size: 1.8rem
+	text-align: center
+	color: #800000
+	line-height: 1.3
+	margin-bottom: 2.5rem
+	//letter-spacing: 1px
+.masters_top_text_invitation
+	max-width: 1000px
+	text-align: center
+	margin: 0 auto
+	font-size: .975rem
+	line-height: 1.6
+	color: $sd-accent
+	h2 
+		font-size: 1.8rem
+		line-height: 1.3
+		color: $accent
+		margin-bottom: 1.5rem
+		
+
+.masters_list
+	display: flex
+	flex-wrap: wrap
+	margin: 0 -10px 2rem -10px
+	list-style: none
+	padding: 0
+	
+
+.masters_item
+	position: relative
+	width: calc( 100% / 3 - 20px )
+	margin: 0 10px 20px 10px
+	background-position: center center
+	background-size: cover
+	background-repeat: no-repeat
+	background-origin: initial
+	background-clip: initial
+	background-color: transparent
+	overflow: hidden
+	border-radius: 3px
+	&::before
+		content: ''
+		display: block
+		padding-top: 68%
+.masters_overlay
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0	
+	z-index: 1
+	//background-color: rgba(41, 41, 41, 0.35)
+	//background: linear-gradient(270deg, rgba(2,0,36,.2) 100%, rgba(2,0,36,0.4) 0%)
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#292929+0,000000+100&0.65+0,0.2+100 */
+	background: linear-gradient(to right,  rgba(41,41,41,0.65) 0%,rgba(41,41,41,0.1) 100%)
+
+	
+
+.masters_inner
+	width: 40%
+	position: absolute
+	left: 30px
+	top: 50%
+	transform: translateY(-50%)
+	z-index: 5
+.masters_title
+	font-size: 1.7rem
+
+	
+.masters_link
+	color: #f1f1f1
+	text-decoration: none
+	letter-spacing: 1px	
+	text-shadow: 0 0 5px rgba(0,0,0,.3)
+	transition: color 70ms ease-out
+	&:hover
+		color: #e3e3e3
+
+
+.masters_btn
+	display: inline-block
+	padding: 8px 12px
+	border: 2px solid $textcolor
+	border-radius: 2px
+	background-color: #f1f1f1
+	font-size: .85rem
+	line-height: .9rem
+	font-weight: 700
+	text-decoration: none 
+	text-transform: uppercase
+	color: $textcolor
+	transition: color 70ms ease-out, background-color 70ms ease-out, border-color 70ms ease-out
+
+	&:hover
+		color: #f1f1f1
+		background-color: $accent
+		border-color: #f1f1f1
+
+@media (max-width: 1200px)
+	.masters_item
+		width: calc( 100% / 2 - 20px )
+
+@media (max-width: 992px)
+	.masters_top_text_info
+		font-size: 1.6rem
+		text-align: center
+		color: #800000
+		line-height: 1.3
+		margin-bottom: 2.5rem
+		//letter-spacing: 1px
+	.masters_top_text_invitation
+		max-width: 1000px
+		text-align: center
+		margin: 0 auto
+		font-size: .975rem
+		line-height: 1.6
+		color: $sd-accent
+		h2 
+			font-size: 1.6rem
+			line-height: 1.3
+			color: $accent
+			margin-bottom: 1.5rem
+
+@media (max-width: 768px)
+	.masters_item
+		width: 100%
