@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>OptimizedHTML 5</title>
+	<meta name="description" content="Startup HTML template OptimizedHTML 5">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dist/preview.jpg">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+
+
+</head>
+
+<body>
+<div class="container-fluid top">
+	<div class="container">
+		<apan class="top_wrapper">
+
+			<nav class="top_container">
+				<button	 class="top_nav_btn closed" id="topNmvBtn"></button>
+				<ul class="top_nav">
+					<li class="top_nav_ltem"><a href="index.html" class="top_nav_link">О компании</a></li>
+					<li class="top_nav_ltem"><a href="list.html" class="top_nav_link">Монтаж</a></li>
+					<li class="top_nav_ltem"><a href="product.html" class="top_nav_link">Наши работы</a></li>
+					<li class="top_nav_ltem"><a href="articles.html" class="top_nav_link">Доставка</a></li>
+					<li class="top_nav_ltem"><a href="article.html" class="top_nav_link">Доставка</a></li>
+					<li class="top_nav_ltem"><a href="masters.html" class="top_nav_link">Акции</a></li>
+				</ul>				
+			</nav>
+			<span class="top_address">г. Москва, МКАД, 38-й километр, 4Бс1</apan>
+		</div>	
+	</div>
+</div>
+<div class="container head">
+	<div class="logo_wrap">
+		<a href="#" class="logo_link">
+			<img src="/images/src/logo_100.png" alt="logo" class="logo_img">
+			<div class="logo_text">
+				<span class="logo_text_top">Кирпичи.рф</span><span class="logo_text_bottom">Все для печей</span>
+			</div>
+		</a>
+	</div>
+	<div class="head_info_wrap">
+		<div class="head_info_phone"><a href="tel:+79168818399" class="head_info_phone_link">8 (916) 881-83-99</a></div>
+		<div class="head_info_time">Пн-Вс: 09:00 - 19:00</div>
+	</div>
+	<div class="head_tach_wrap">
+		<a href="#" class="head_tach_link"><span class="head_tach_txt">Заказать звонок</span></a>		
+	</div>
+	<div class="head_serch_wrap" id="searchForm">
+		<form action="#" class="head_serch_form">
+			<input id="title-search-input" type="text" name="q" value="" autocomplete="off" class="head_serch_input">
+			<button type="submit" name="s" class="head_serch_btn"><span class="icon-magnifying-glass"></span></button>			
+		</form>
+		<span class="head_serch_closed_btn" id="searchBtnClosed"><span class="icon-xmark"></span></span>
+
+	</div>
+
+	
+	<div class="head_person_wrap">
+		<span class="head_mob_btn"><span class="icon-phone"></span></span>
+		<span class="head_mob_btn" id="searchBtn"><span class="icon-magnifying-glass"></span></span>
+		<a href="#" class="head_person_link __auth">
+			<div class="head_person_icon">
+				<span class="icon-user"></span>
+			</div>
+			<div class="head_person_name">Вход</div>
+		</a>
+		<a href="/cart.html" class="head_cart_link __full">
+			<div class="head_cart_icon">
+				<div class="head_cart_qty">0</div>
+				<span class="icon-cart"></span>				
+			</div>
+			<div class="head_cart_name">Оформить</div>
+		</a>
+	</div>		
+</div>	
+
+
+
+<div class="container">
+	<h1 class="title">Корзина покупок</h1>
+	<nav aria-label="breadcrumb">
+		<ul class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Главная</a></li>			
+			<li class="breadcrumb-item active" aria-current="page">Корзина покупок</li>
+		</ul>
+	</nav>
+
+	<div class="cart_content">
+		<div class="cart_info">
+			<div class="cart_resault"><span class="cart_resault_text">Итого: </span><span id="cartResault">1 070 999</span>руб.</div>
+			<button class="cart_btn" id="cartBtn">Оформить заказ</button>
+		</div>
+
+		<div class="cart_wrap">
+			<div class="cart_header">
+				<span class="cart_number">В корзине: <span id="cartNamber">3 товара</span></span>
+			</div>
+			<div class="cart_list" id="cartList">
+
+
+				<div class="cart_item">
+					<div class="cart_img_wrap">
+						<a href="#" class="cart_img_link">
+							<img src="/images/src/list/kirpich-kc-keramik-arenberg1-300x300.jpg" alt="Товар" class="cart_img">
+						</a>
+					</div>
+
+					<div class="cart_item_content">
+						<div class="cart_item_mame">
+							<a href="#" class="cart_item_name_link">КС-керамик красный гладкий полнотелый печной кирпич</a>
+						</div>
+
+						<div class="cart_item_content_manager">
+							<div class="cart_item_sum_l"><span class="item-sam">62 990</span> руб.</div>
+							<div class="cart_counter">
+								<span class="cart_counter__btn" data-direction="minus">-</span>
+								<input type="number" name="QUANTITY" value="1" size="5" class="cart_counter__value">
+								<span class="cart_counter__btn" data-direction="plus">+</span>
+							</div>
+
+							<div class="cart_item_total_wrap">
+
+								<div class="cart_item_sum"><span class="item-sam"></span>30 190</span> руб.</div>
+								<span class="cart_item_staff"><span>цена за</span> 1 шт</span>
+							</div>
+						</div>
+					</div>
+					<span class="cart_item_del"><span class="icon-close"></span></span>
+
+				</div>
+
+				<div class="cart_item">
+					<div class="cart_img_wrap">
+						<a href="#" class="cart_img_link">
+							<img src="/images/src/list/mert2-300x300.jpg" alt="Товар" class="cart_img">
+						</a>
+					</div>
+
+
+					<div class="cart_item_content">
+						<div class="cart_item_mame">
+							<a href="#" class="cart_item_name_link">ЧМертель огнеупорный Терракот</a>
+						</div>
+
+						<div class="cart_item_content_manager">
+							<div class="cart_item_sum_l"><span class="item-sam">62 990</span> руб.</div>
+							<div class="cart_counter">
+								<span class="cart_counter__btn" data-direction="minus">-</span>
+								<input type="number" name="QUANTITY" value="1" size="5" class="cart_counter__value">
+								<span class="cart_counter__btn" data-direction="plus">+</span>
+							</div>
+
+							<div class="cart_item_total_wrap">
+								<span class="cart_item_old">35 280 руб.</span>
+								<div class="cart_item_sum"><span class="item-sam"></span>30 190</span> руб.</div>
+								<span class="cart_item_staff"><span>цена за</span> 1 шт</span>
+							</div>
+						</div>
+					</div>
+					<span class="cart_item_del"><span class="icon-close"></span></span>
+				</div>
+
+				<div class="cart_item">
+					<div class="cart_img_wrap">
+						<a href="#" class="cart_img_link">
+							<img src="/images/src/list/IMG_20201208_13590022222-removebg-preview-300x300.png" alt="Товар" class="cart_img">
+						</a>
+					</div>
+
+					<div class="cart_item_content">
+						<div class="cart_item_mame">
+							<a href="#" class="cart_item_name_link">Кирпич огнеупорный прямой Ш-6 Черный «ГОСТ 390-2018, ГОСТ 8691-2018»</a>
+						</div>
+
+						<div class="cart_item_content_manager">
+							<div class="cart_item_sum_l"><span class="item-sam">1 062 990</span> руб.</div>
+							<div class="cart_counter">
+								<span class="cart_counter__btn" data-direction="minus">-</span>
+								<input type="number" name="QUANTITY" value="1" size="5" class="cart_counter__value">
+								<span class="cart_counter__btn" data-direction="plus">+</span>
+							</div>
+
+							<div class="cart_item_total_wrap">
+								<span class="cart_item_old">1 035 280 руб.</span>
+								<div class="cart_item_sum"><span class="item-sam"></span>1 030 190</span> руб.</div>
+								<span class="cart_item_staff"><span>цена за</span> 1 шт</span>
+							</div>
+						</div>
+					</div>
+					<span class="cart_item_del"><span class="icon-close"></span></span>
+				</div>
+
+
+			</div><!-- END LIST -->
+
+
+		</div>
+
+
+		<script>
+			if (document.getElementById('cartList')) {
+
+				document.querySelectorAll('.cart_item_del').forEach(function (link) {
+					link.addEventListener('click', removeCartItem);
+				});
+
+				function findItem(el) {
+					while ((el = el.parentElement) && !el.classList.contains('cart_item'));
+					return el;
+				}
+				function removeCartItem(e) {
+					let item = e.target;
+					while ((item = item.parentElement) && !item.classList.contains('cart_item'));
+					item.remove();
+				}
+			}
+		</script>
+	</div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<footer class="container-fluid footer_wrap">	
+	<div class="container">
+		<div class="footer_inner">
+
+			<div class="footer_block">
+				<h3 class="footer_h3">Компания</h3>
+				<ul class="footer_list">
+					<li class="footer_item"><a href="catalog.html" class="footer_item_link">Каталог</a></li>
+					<li class="footer_item"><a href="master.html" class="footer_item_link">О компании</a></li>
+					<li class="footer_item"><a href="/stocks.html" class="footer_item_link">Акции и скидки</a></li>				
+					<li class="footer_item"><a href="#" class="footer_item_link">Новинки</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Монтаж</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Статьи</a></li>
+					<li class="footer_item"><a href="icon_fonts.html" class="footer_item_link">Контакты</a></li>
+				</ul>
+			</div>
+
+			<div class="footer_block">
+				<h3 class="footer_h3">Каталог</h3>
+				<ul class="footer_list">
+					<li class="footer_item"><a href="#" class="footer_item_link">Понотелый кирпич</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Огнеупорный кирпич</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Кладочные смеси</a></li>				
+					<li class="footer_item"><a href="#" class="footer_item_link">Штукатурки</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Печное литьё</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Отопительные печи</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Банные печи</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Камины и топки</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Котлы отопления</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Дымоходы</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Уличные очаги</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Грили и мангалы</a></li>
+				</ul>
+			</div>
+
+			<div class="footer_block">
+				<h3 class="footer_h3">Информация</h3>
+				<ul class="footer_list">
+					<li class="footer_item"><a href="/person.html" class="footer_item_link">Личный кабинет</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Доставка и самовывоз</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Способы оплаты</a></li>				
+					<li class="footer_item"><a href="#" class="footer_item_link">Политика конфиденциальности</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Расрочка и кредит</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Статьи</a></li>
+					<li class="footer_item"><a href="#" class="footer_item_link">Контакты</a></li>
+				</ul>
+			</div>
+
+			<div class="footer_block info">
+				<h3 class="footer_h3">Центральный офис</h3>
+				<ul class="footer_list">
+					<li class="footer_item"><span class="footer_black">Адрес:</span>г. Москва, МКАД, 38-й километр, 4Бс1</li>
+					<li class="footer_item">
+						<span class="footer_black">Телефон:</span><a href="#" class="footer_item_link">+7 918 475-08-47</a>
+					</li>
+					<li class="footer_item">
+						<span class="footer_black">Email:</span><a href="#" class="footer_item_link">info@bricks.ru</a>
+					</li>
+				</ul>	
+
+				<ul class="footr_icons_list" id="cosialIcons">
+					<li class="footer_icon_li"><span class="footer_icon" data-link="ya.ru/">
+						<img src="/images/src/icons/VK.svg" alt="">
+					</span></li>
+					<li class="footer_icon_li"><span class="footer_icon" data-link="ya.ru/">
+						<img src="/images/src/icons/Ok.svg" alt="">
+					</span></li>
+					<li class="footer_icon_li"><span class="footer_icon" data-link="https://ya.ru/">
+						<img src="/images/src/icons/Telegram.svg" alt="">
+					</span></li>
+					<li class="footer_icon_li"><span class="footer_icon" data-link="https://ya.ru/">
+						<img src="/images/src/icons/WhatsApp.svg" alt="">
+					</span></li>
+					<li class="footer_icon_li"><span class="footer_icon" data-link="https://ya.ru/">
+						<img src="/images/src/icons/TikTok.svg" alt="">
+					</span></li>
+					<li class="footer_icon_li"><span class="footer_icon" data-link="https://ya.ru/">
+						<img src="/images/src/icons/YouTube.svg" alt="">
+					</span></li>
+					<li class="footer_icon_li"><span class="footer_icon" data-link="https://ya.ru/">
+						<img src="/images/src/icons/Zen.svg" alt="">
+					</span></li>					
+				</ul>
+				
+				
+			</div>
+	
+		</div>
+		
+		<div class="footer_bottom">
+			<span class="fotter_copyrate">2020 © Bricks.Ru: Строительство печей и каминов</span>
+		</div>
+
+	</div>
+	<div class="footer_btn_up" id="upbutton"></div>
+</footer>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/fancybox.umd.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
